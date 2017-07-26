@@ -1,0 +1,418 @@
+/*All elements used for all html pages; for example the background picture, headlines1, elements that have to be hidden,
+  buttons and input-tags, the home icon and what happens while hovering over the home icon (color and icon)*/
+html {
+  background: url(../res/galaxy1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+
+div,ol {
+  text-align: center;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 20px;
+}
+
+#h1 {
+  text-align: center;
+  font-family: 'Geostar Fill', cursive;
+  font-size: 80px;
+  height:30%
+}
+
+.hidden,#hidden {
+    display: none;
+}
+
+button, input {
+  padding: 4px;
+  background-color: #696969;
+  font: black;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+button {
+  width: 50%;
+}
+
+button:hover {
+    color: #500505;
+}
+
+.home{
+  background-color: #696969;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.home:hover {
+  color: #500505;
+  cursor: pointer;
+}
+
+/*Index html, the registration box is the main element of the index page and all its elements are positioned here*/
+
+#registrationNav{
+  background-color: #696969;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  border: 2px solid black;
+  font-size: 16px;
+}
+.logInContent, .signUpContent{
+  padding: 10px;
+}
+.logIn, .signUp{
+  background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 0px;
+}
+
+.logIn:hover, .signUp:hover{
+  background-color: 	#C0C0C0;
+  cursor: pointer;
+}
+
+.active{
+  background-color: black;
+  color: #500505;
+}
+
+.registration {
+  background-color: black;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  position: fixed;
+  left: 40%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -webkit-transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+}
+
+.resetPassword{
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+  position: fixed;
+  left: 40%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -webkit-transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+}
+
+.forgotPass, .back{
+  color: #500505;
+  font-size: 12px;
+}
+
+.hint{
+  color: #500505;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.forgotPass:hover, .back:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logInNotification{
+  opacity: 0.8;
+  background-color: #696969;
+  color:#500505;
+  border-radius: 8px;
+  padding: 20px;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/*menu.html, the menu-bar is designed with its 3 elements and the corresponding elements, the sound is displayed at the bottom of the page
+  the buttons are also included, designed and positioned*/
+#menubar {
+  background-color: black;
+  height: 15%;
+  width: 100%;
+  position: fixed;
+}
+
+.highscore, .username, .logOut {
+  background-color: #696969;
+  border-radius: 8px;
+  margin-top: 4%;
+}
+
+.highscore:hover, .username:hover, .logOut:hover {
+  color: #500505;
+  cursor: pointer;
+}
+
+.sound{
+  background-color: #696969;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 70%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+  background: black;
+  border-radius: 17px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 3px 3px 2px #00000F;
+  border: 1px solid #00000F;
+  height: 20px;
+  width: 28px;
+  border-radius: 14px;
+  background: #ADACAC;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+
+.sound:hover{
+  color: #500505;
+  cursor: pointer;
+}
+
+#buttonsmenu{
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.play, .instructions, .credits {
+  background-color: #696969;
+  border: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: black;
+  border-radius: 20px;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+}
+
+
+/*credits.html userdata.html instructions.html, main is a box with a certain design, that is positioned in the center of the html page*/
+main{
+  opacity: 0.7;
+  background-color: #696969;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  font-family: 'Electrolize', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  padding: 15px;
+}
+
+/*userdata.html, the main box has the same design like the elemts of the other sites, the cursor is changed and the elemts are put in the right position*/
+.userData, .changeUserData{
+  background-color: rgba(105,105,105,.7);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.userData{
+  -webkit-transform: rotateY(0deg);
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+}
+
+.changeUserData{
+  -webkit-transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+}
+
+#currentName, #currentMail, #currentPassword {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.currentNameInput, .currentMailInput, .currentPasswordInput {
+  text-align: left;
+}
+
+.enterChange{
+  font-size: 24px;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.changeDataNotification{
+  color: #500505;
+  opacity: 0.8;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #696969;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.change:hover{
+  color: #500505;
+  cursor: pointer;
+}
+
+/*credits.html, the names have a bigger font-size*/
+.names {
+  font-size: 30px;
+}
+
+/*highscore.html, the list is designed*/
+ol{
+  opacity: 0.7;
+  background-color: #696969;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 24px;
+  list-style-position: inside;
+  text-align: left;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+li{
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.score{
+  float: right;
+  display: inline;
+  font-weight: bold;
+}
+
+/*instructions.html, the main layout is designed in the instructionsbox and its elements are put in the right position*/
+#h2 {
+  font-size: 30px;
+}
+
+.keys {
+  text-align: right;
+}
+
+#action, #key, #storytext {
+  font-size: 15px;
+  line-hight: normal;
+  padding: 4px;
+  margin: 0px;
+}
+
+#key, #action {
+  text-align: left;
+}
+
+#action {
+  font-weight: bold;
+}
+
+ .instructionsbox {
+   background: #ADACAC;
+   opacity: 0.7;
+   border-radius: 8px;
+   width:80%;
+   top: 10%;
+   margin-left: 10%;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ .picture {
+   margin-top: 20px;
+ }
+
+/*responsive, some elements are adjusted when using a device with a smaller screen*/
+
+@media only screen and (max-width:768px) {
+
+    /*all html pages, the elements are put in a different position, the font-size is smaller and some are omitted because they do not contain the main content of the page*/
+    #h1 {
+        text-align: center;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    .home {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        margin-top: 20px;
+    }
+
+    /*index.html*/
+    .registration {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        margin-top: 20px;
+    }
+
+    .indexH1, .instructionsH1 {
+        margin-top: 0px;
+    }
+
+    /*menu.html*/
+    #menubar {
+        background-color: transparent;
+    }
+
+    .highscore, .username, .logout {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .play, .instructions, .credits {
+        padding: inherit;
+    }
+    /*instructions.html*/
+   .picture, #h2 {
+       display: none;
+   }
+
+   #storytext, #action, #key {
+       font-size: 10px;
+   }
+
+}

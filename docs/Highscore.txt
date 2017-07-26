@@ -1,0 +1,1 @@
+Hier kann der Spieler die Highscores aller registrierten Spieler ansehen.

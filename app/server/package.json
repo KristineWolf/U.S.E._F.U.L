@@ -1,0 +1,9 @@
+{
+  "name": "useful-server",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "latest",
+    "firebase-admin": "^4.1.3",
+    "socket.io": "latest"
+  }
+}

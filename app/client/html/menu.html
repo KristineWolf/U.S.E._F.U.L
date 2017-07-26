@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <meta name="description" content="menu, useful, start">
+  <meta name="keywords" content="start game, settings, credits">
+  <link href="../css/layout.css" rel="stylesheet" media="screen">
+  <link href="../css/gridiculous.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="../css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Electrolize|Geostar+Fill" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+  <meta name=“viewport“ content=“width=device-width, initial-scale=1“>
+  </head>
+  <body>
+    <content>
+      <div id="menubar" class="grid wfull">
+        <div class="row">
+          <div class="c3 highscore">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            <span class="highscoreText">Highscore</span>
+          </div>
+          <div class="c4"></div>
+
+          <div class="c3 username">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="usernameText">User</span>
+          </div>
+          <div class="c1"></div>
+          <div class="c1 logOut">
+            <i class="fa fa-power-off" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <nav id="buttonsmenu">
+          <button type="button" class="play">PLAY GAME</button>
+          <button type="button" class="instructions">Instructions</button>
+          <button type="button" class="credits">Credits</button>
+        </nav>
+      </div>
+
+      <div class="sound">
+        <i class="fa fa-volume-off" id="hidden" aria-hidden="true"></i>
+        <i class="fa fa-volume-down" id="hidden" aria-hidden="true"></i>
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+        <input id="volumeslider" class="hidden"type="range" min="0" max="100" value="100" step="1">
+      </div>
+    </content>
+
+    <script src="../js/src/Menu.js"></script>
+    <script src="../js/src/models/InitializeFirebase.js"></script>
+  	<script src="../js/src/models/FirebaseAuthentification.js"></script>
+    <script src="../js/src/models/DatabaseAdapter.js"></script>
+    <script src="../js/src/controllers/MenuController.js"></script>
+    <script src="../js/src/views/MenuView.js"></script>
+    <script src="../js/src/controllers/VolumeController.js"></script>
+    <script src="../js/lib/howler.js"></script>
+    <script>
+      Menu.init();
+    </script>
+  </body>
+</html>

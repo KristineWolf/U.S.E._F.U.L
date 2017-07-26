@@ -1,0 +1,1 @@
+Das Menü des Spiels. Von hier aus kann der Spieler zum Spiel navigieren, aber auch eigene Userdaten (rechts oben) oder Highscores einsehen (links oben), die Instruktionen aufrufen oder Einstellungen ändern.
