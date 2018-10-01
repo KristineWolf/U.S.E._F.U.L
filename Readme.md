@@ -31,9 +31,9 @@ gegeben.
 Derzeit befindet sich das Spiel noch in der Entwicklungsphase. Ein Multiplayer- und Score-System wurde entwickelt.
 Es werden auch alte Spielstände problemfrei weider aufgenommen.
 
-![Bild laedt...](https://www.dropbox.com/s/ln1kfnucgdr781o/Menu.png?raw=1)
-![Bild laedt...](https://www.dropbox.com/s/ghhlte0jq7oi0o0/Zoomed%20In%20Game.png?raw=1)
-![Bild laedt...](https://www.dropbox.com/s/kwar2sclag57aaw/Zoomed%20Out%20Game.png?raw=1)
+![Bild laedt...](/docs/Menu.png?raw=1)
+![Bild laedt...](/docs/Zoomed%20In%20Game.png?raw=1)
+![Bild laedt...](/docs/Zoomed%20Out%20Game.png?raw=1)
 
 ### Was noch zu tun ist
 
